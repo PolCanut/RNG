@@ -18,11 +18,6 @@ public class GestionOS {
         boolean salir = false;
         int opcio;
 
-        System.out.println("1. Gestión Articulos");
-        System.out.println("2. Gestión Clientes");
-        System.out.println("3. Gestión Pedidos");
-        System.out.println("0. Salir");
-
         do {
             System.out.println("1. Gestión Articulos");
             System.out.println("2. Gestión Clientes");
