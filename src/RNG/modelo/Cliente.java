@@ -1,57 +1,43 @@
+// Cliente.java
 package RNG.modelo;
 
 public class Cliente {
-    String nombre;
-    String direccion;
-    String email;
-    boolean premium;
+    private String correoElectronicoCliente;
+    private String nombre;
+    private String direccion;
+    private boolean premium;
 
-
-    public Cliente() {
-    }
-
-    public Cliente(String nombre, String direccion, String email, boolean premium) {
-        this.nombre = nombre;
-        this.direccion = direccion;
-        this.email = email;
-        this.premium = premium;
+    public String getCorreoElectronicoCliente() {
+        return this.correoElectronicoCliente;
     }
 
     public String getNombre() {
-        return nombre;
-    }
-    public boolean getPremium() {
-        return premium;
+        return this.nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    public void getPremium(boolean premium) {
-        this.premium = premium;
-    }
     public String getDireccion() {
-        return direccion;
+        return this.direccion;
     }
 
-    public void setDireccion(String direccion) {
+    public boolean esPremium() {
+        return this.premium;
+    }
+
+    public Cliente(String correoElectronicoCliente, String nombre, String direccion, boolean esPremium) {
+        this.correoElectronicoCliente = correoElectronicoCliente;
+        this.nombre = nombre;
         this.direccion = direccion;
+        this.premium = esPremium;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    // Otros métodos y setters
 
     @Override
     public String toString() {
         return "Cliente{" +
-                "nombre='" + nombre + '\'' +
+                "correoElectronicoCliente='" + correoElectronicoCliente + '\'' +
+                ", nombre='" + nombre + '\'' +
                 ", direccion='" + direccion + '\'' +
-                ", email=" + email +
                 '}';
     }
 }
