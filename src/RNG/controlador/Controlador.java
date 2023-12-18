@@ -67,3 +67,7 @@ public class Controlador {
         return articuloDAO.buscarArticuloPorCodigo(codigoArticulo);
     }
 }
+
+public void update(){
+    update();
+        }

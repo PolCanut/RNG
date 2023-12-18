@@ -1,0 +1,11 @@
+package RNG.modelo;
+
+import java.util.List;
+
+public interface PedidoDAO {
+    void agregarPedido(Pedido pedido);
+    void eliminarPedido(int numeroPedido);
+    Pedido buscarPedidoPorNumero(int numeroPedido);
+    List<Pedido> obtenerTodosLosPedidos();
+    ListaPedidos obtenerPedidosPendientes();
+}
