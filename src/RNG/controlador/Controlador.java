@@ -39,7 +39,6 @@ public class Controlador {
         articuloDAO.eliminarArticulo(articulo.getCodigoArticulo());
     }
 
-
     public void agregarCliente(Cliente cliente) {
         clienteDAO.agregarCliente(cliente);
     }
@@ -47,6 +46,7 @@ public class Controlador {
     public void eliminarCliente(String correoElectronicoCliente) {
         clienteDAO.eliminarCliente(correoElectronicoCliente);
     }
+
     public Datos getDatos() {
         return datos;
     }
@@ -66,8 +66,7 @@ public class Controlador {
     public Articulo buscarArticuloPorCodigo(String codigoArticulo) {
         return articuloDAO.buscarArticuloPorCodigo(codigoArticulo);
     }
-}
 
-public void update(){
-    update();
-        }
+    public void update() {
+    }
+}

@@ -290,7 +290,6 @@ public class GestionOS {
         }
     }
 
-
     private void mostrarPedidosEnviados() {
         ListaPedidos listaPedidos = controlador.getDatos().getListaPedidos();
         if (listaPedidos.getSize() > 0) {
