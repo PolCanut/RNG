@@ -29,8 +29,6 @@ public class Articulo {
         this.tiempoPreparacion = tiempoPreparacion;
     }
 
-    // Getters y setters
-
     @Override
     public String toString() {
         return "Articulo{" +
